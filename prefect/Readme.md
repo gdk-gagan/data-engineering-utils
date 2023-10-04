@@ -44,7 +44,8 @@ This is done by adding `@task` and `@flow` decorators to your functions.
 - You can build a deployment via the CLI or a python script or prefect UI.
 - On the CLI, the main steps in creating are a deployment are build and apply 
   1. Build : `prefect deployment build <filename.py>:<main flow> -n <deployment name>`
-  ```bash prefect deployment build ./parametrized_flow.py:etl_parent_flow -n "Parametrized ETL"
+  ```bash 
+  prefect deployment build ./parametrized_flow.py:etl_parent_flow -n "Parametrized ETL"
   ```
    
   - This creates a deployment.yaml file that contains all the metadata that prefect requires to orchestrate this flow.
@@ -52,7 +53,8 @@ This is done by adding `@task` and `@flow` decorators to your functions.
   - Add this for now - {"year": 2021, "months": [1,2], color:"green"}
 - 2. Apply: `prefect deployment apply <deployment.yaml>`
   
-  ```bash prefect deployment apply etl_parent_flow-deployment.yaml 
+  ```bash 
+  prefect deployment apply etl_parent_flow-deployment.yaml 
   ```
   - Creates a deployment based on the yaml file.
 
@@ -73,7 +75,7 @@ This is done by adding `@task` and `@flow` decorators to your functions.
 
 ### Run the deployment or create a schedule
 You can run a deployment ad hoc from the CLI or UI using a default agent or create a schedule from the UI, in flow script using cron or the CLI the deployment command when you create your deployment.
-To add schedules - you can add via UI or command line using --cron "0 0 * * *" flag with the deployment command
+To add schedules - you can add via UI or command line using `--cron "0 0 * * *"` flag with the deployment command
 
 ### Setup job notifications
 - after setting up deployments and agents, you can set up notifications.
