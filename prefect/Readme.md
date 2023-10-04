@@ -127,5 +127,8 @@ To add schedules - you can add via UI or command line using `--cron "0 0 * * *"`
     ```bash
     prefect deployment run etl-parent-flow/docker-flow -p "year=2021" -p "months=[1,2]"
     ```
+Troubleshooting:
+If you get python version deprecated warning, set your cloudsdk_python environment variable to point to the correct interpreter. In my case, I pointed it to my global python interpreter. You can also point it to your conda base or env python interpreter. 
+  `export CLOUDSDK_PYTHON=/usr/bin/python3`
 
 Reference: Amazing github repo here. [Prefect by discdiver](https://github.com/discdiver/prefect-zoomcamp/blob/main/README.md)
