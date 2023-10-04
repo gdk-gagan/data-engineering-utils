@@ -1,3 +1,4 @@
 docker-utils/data/
 docker-utils/ny_taxi_postgres_data/
 docker-utils/.dockerignore
+docker-utils/.ipynb_checkpoints
