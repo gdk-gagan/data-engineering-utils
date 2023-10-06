@@ -4,3 +4,5 @@ docker-utils/.dockerignore
 docker-utils/.ipynb_checkpoints
 prefect/data/
 prefect/.DS_Store
+.DS_Store
+spark/data/
