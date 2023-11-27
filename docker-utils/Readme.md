@@ -215,6 +215,7 @@ taxi_ingest:v001 \
   - ALL SERVICES DEFINED IN DOCKER-COMPOSE ARE PART OF THE SAME NETWORK AUTOMATICALLY. NO NEED TO CREATE NETWORKS
   - Stop postgres and pgadmin containers.
   - Build a new image using `docker compose up`.
+  - Note: Connect to pgadmin. Using the name of the postgres service as defined in docker-compose for hostname. 
   - Run the ingest.py in docker-compose as follows,
 
 ```bash
